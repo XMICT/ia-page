@@ -1,42 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My profile</title>
 </head>
+
 <body>
-    <head>
-        <div class="container-video">
-            <video style="height: 60vh; opacity: 0.4;"src="/assets/video/background.mp4" autoplay muted loop></video>
+    <nav class="nav-container">
+        <ul class="home-container">
+            <li class="home-items"><a href="#home">Home</a></li>
+            <li class="home-items"><a href="#about">About</a></li>
+            <li class="home-items"><a href="#skills">Proyects</a></li>
+            <li class="home-items"><a href="#contact">Feeling</a></li>
+        </ul>
+    </nav>
+    
+    <header class="container__banner">
+        <div class="content__banner">
+            <h1 style="padding-bottom: 3vh;">Inteligencia <br> Artificial</h1>
+            <p style="color: var(--gray); letter-spacing: 1.5px; line-height: 60px; padding-bottom: 5vh;">El comienzo de una nueva era</p>
         </div>
-        
-        <nav class="nav-container absolute">
-            <ul class="home-container">
-                <li class="home-items"><a href="#home">Home</a></li>
-                <li class="home-items"><a href="#about">About</a></li>
-                <li class="home-items"><a href="#skills">Proyects</a></li>
-                <li class="home-items"><a href="#contact">Feeling</a></li>
-            </ul>
-        </nav>
+        <div><img src="/assets/image/bot.svg"></div>
+    </header>
 
-        <div class="container-title">
-            <h1 style="letter-spacing: 0.2rem;">INTELIGENCIA ARTIFICIAL</h1>
+    <div class="container__primary">
+        <div class="container__secondary">
+            <div class="container__dark">
+                <div class="container__definicion">
+                    <div class="design__vl">
+                        <div class="vl"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <article class="content-definicion">
+                        <h2 style="margin: 0 50px 100px 0;">Definicion</h2>
+                        <p style="margin: 0 50px 0 0; letter-spacing: 1.5px; line-height: 60px;">La <strong>Inteligencia
+                                Artificial</strong> (IA) es la combinación de algoritmos planteados con el propósito
+                            decrear máquinas que presenten las mismas capacidades que el ser humano. Una tecnología que
+                            todavía nos resulta lejana y misteriosa, pero que desde hace unos años está presente en
+                            nuestro día a día a todas horas.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="container__gray">
+                <div class="container__tipos">
+                    <section class="tipos-text">
+                        <div style="flex: 1;" class="design__hl">
+                            <div class="circle"></div>
+                            <div class="hl"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <h2 style="margin-left: 5vw;">Tipos de IA</h2>
+                    </section>
+
+                    <div class="design__tipos">
+                        <article class="content-tipos">
+                            <section class="tipos-lista">
+                                <ul>
+                                    <li class="tipos-lista-item">
+                                        <div style="padding: 0 50px 0 0;" class="item-image">
+                                            <img src="./assets/icons/item-autoconocimiento.svg" alt="">
+                                        </div>
+                                        <div class="item-text">
+                                            <h3>Memoria limitada</h3>
+                                            <p>Se considera que la mayor parte de la IA moderna es de memoria limitada.
+                                                Puede usar la memoria para mejorar con el tiempo mediante el entrenamiento
+                                                con datos nuevos, por lo general, a través de una red neuronal artificial o
+                                                algún otro modelo de entrenamiento. El aprendizaje profundo, un subconjunto
+                                                del aprendizaje automático, se considera inteligencia artificial con memoria
+                                                limitada.</p>
+                                        </div>
+                                    </li>
+                                    <li class="tipos-lista-item">
+                                        <div class="item-text">
+                                            <h3>Maquinas Reactivas</h3>
+                                            <p>IA limitada que solo reacciona a diferentes tipos de estímulos basados en
+                                                reglas preprogramadas. No usa memoria y, por lo tanto, no puede aprender con
+                                                datos nuevos. Deep Blue de IBM, que venció al campeón de ajedrez Garry
+                                                Kasparov en 1997, fue un ejemplo de una máquina reactiva.</p>
+                                        </div>
+                                        <div style="padding: 0 0 0 50px;" class="item-image">
+                                            <img src="/assets/icons/item-maquinas.svg" alt="maquinas reactivas">
+                                        </div>
+                                    </li>
+                                    <li class="tipos-lista-item">
+                                        <div style="padding: 0 50px 0 0;" class="item-image">
+                                            <img src="/assets/icons/item-sentimiento.svg" alt="maquinas reactivas">
+                                        </div>
+                                        <div class="item-text">
+                                            <h3>Teoría de la mente</h3>
+                                            <p>Actualmente no existe IA con teoría de la mente, pero se están investigando
+                                                distintas posibilidades. El término hace referencia a IA que puede emular la
+                                                mente humana y tiene capacidades de toma de decisiones similares a las de un
+                                                ser humano, lo cual incluye reconocer y recordar emociones, y reaccionar en
+                                                situaciones sociales como lo haría un ser humano.</p>
+                                        </div>
+                                    </li>
+                                    <li class="tipos-lista-item">
+                                        <div class="item-text">
+                                            <h3>Autoconocimiento</h3>
+                                            <p>Un paso más allá de la IA con teoría de la mente, el concepto de IA con
+                                                autoconocimiento describe una máquina mítica que tiene conocimiento de su
+                                                propia existencia y tiene las capacidades intelectuales y emocionales de un
+                                                ser humano. Al igual que la IA con teoría de la mente, la IA con
+                                                autoconciencia no existe en la actualidad.</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img style="padding: 0 0 0 50px;" src="/assets/icons/item-mente.svg"
+                                                alt="maquinas reactivas">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </article>
+                        <div style="margin: 5vh 0 0 10vw;" class="design__vl">
+                            <div class="vl"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container__dark">
+                <article class="container__modelos">
+                    <div class="modelos-text">
+                        <h2>Modelos</h2>
+                        <p>Cuando las empresas hablan de IA, suelen hablar de "datos de entrenamiento". Pero ¿qué significa eso? Recuerda que la inteligencia artificial con memoria limitada es una IA que mejora con el tiempo, ya que se entrena con datos nuevos. El aprendizaje automático es un subconjunto de la inteligencia artificial que usa algoritmos para entrenar datos y obtener resultados.</p>
+
+                    </div>
+                </article>
+            </div>
         </div>
-    </head>
-
-    <div class="container-primary">
-        <article class="container-definicion">
-            <section class="text">
-                <h1>¿QUE ES?</h1>
-
-                <p>La Inteligencia Artificial (IA) es la combinación de algoritmos planteados con el propósito de crear máquinas que presenten las mismas capacidades que el ser humano. Una tecnología que todavía nos resulta lejana y misteriosa, pero que desde hace unos años está presente en nuestro día a día a todas horas.</p>
-            </section>
-            <section style="margin-top: 50px;" class="image">
-                <img style="width: 100%" src="assets\image\ia-bot.jpg" alt="ia-bot">
-            </section>
-        </article>
     </div>
 </body>
+
 </html>
