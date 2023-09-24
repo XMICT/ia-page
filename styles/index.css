@@ -31,11 +31,11 @@ h2 {
 
 p {
     font-family: "Satoshi-Light";
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 li p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 strong {
@@ -300,7 +300,8 @@ strong {
 
 /*Container-conclusion*/
 .container__conclusion{
-    margin: 0 15vw 10vh 15vw;
+    margin: 0 15vw 0 15vw;
+    padding: 0 0 10vh 0;
 
     display: flex;
 
@@ -317,13 +318,51 @@ strong {
 .image-conclusion img{
     width: 100%;
     max-height: 70vh;
+    transform: scaleX(-1);
 }
 
 .content-conclusion{
     flex: 1;
 
-    text-align: right;
-    padding: 0 0 0 5vw;
+    text-align: left;
+    padding: 0 5vw 0 0;
+}
+
+/*Container-Feedback*/
+.container__feedback{
+    display: flex;
+    margin: 0 15vw;
+    padding: 10vh 0;
+
+}
+
+.content-feedback{
+    flex: 1;
+}
+
+.content-feedback input{
+    padding: 0 5px;
+
+    height: 40px;
+
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.content-feedback form{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-feedback .usuario{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-feedback .comentario{
+    display: flex;
+    flex-direction: column;
 }
 
 
