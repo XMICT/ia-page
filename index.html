@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My profile</title>
+    <link rel="shortcut icon" href="/assets/icons/ia-icon.svg">
+    <title>IA
+    </title>
 </head>
 
 <body>
     <nav class="nav-container">
         <ul class="home-container">
-            <li class="home-items"><a href="#home">Home</a></li>
-            <li class="home-items"><a href="#about">About</a></li>
-            <li class="home-items"><a href="#skills">Proyects</a></li>
-            <li class="home-items"><a href="#contact">Feeling</a></li>
+            <li class="home-items"><a href="#definicion">Definicion</a></li>
+            <li class="home-items"><a href="#tipos">Tipos</a></li>
+            <li class="home-items"><a href="#modelos">Modelos</a></li>
+            <li class="home-items"><a href="#beneficios">Beneficios</a></li>
+            <li class="home-items"><a href="#conclusion">Conclusion</a></li>
         </ul>
     </nav>
 
@@ -35,7 +38,7 @@
                         <div class="circle"></div>
                         <div class="vl"></div>
                     </div>
-                    <article class="content-definicion">
+                    <article id="definicion" class="content-definicion">
                         <h2 style="margin: 0 50px 100px 0;">Definicion</h2>
                         <p style="margin: 0 50px 0 0;">La <strong>Inteligencia
                                 Artificial</strong> (IA) es un campo de la ciencia relacionado con la creación de
@@ -65,7 +68,7 @@
 
 
                     <div class="design__tipos">
-                        <article class="content-tipos">
+                        <article id="tipos" class="content-tipos">
                             <p style="margin-bottom: 5vh;">La inteligencia artificial se puede organizar de varias
                                 maneras, según las etapas de desarrollo o las acciones que se están realizando.
                                 <br><br>Por ejemplo, se suelen reconocer cuatro etapas de desarrollo de la IA.
@@ -147,7 +150,7 @@
                 </div>
             </div>
             <div class="container__darkgray">
-                <article class="container__modelos">
+                <article id="modelos" class="container__modelos">
                     <div class="modelos-title">
                         <h2 style="margin: 0 5vw 0 0;">Modelos</h2>
                         <div style="flex: 1;" class="design__hl">
@@ -167,7 +170,7 @@
                         <ul>
                             <li>
                                 <div class="item__modelo-image">
-                                    <img  src="/assets/icons/ojo-abierto.svg" alt="">
+                                    <img src="/assets/icons/ojo-abierto.svg" alt="">
                                 </div>
                                 <div class="item__modelo-text">
                                     <h3>Aprendizaje supervisado</h3>
@@ -198,7 +201,7 @@
                 </article>
             </div>
             <div class="container__dark">
-                <article class="container__beneficios">
+                <article id="beneficios" class="container__beneficios">
                     <div class="beneficios-title">
                         <div style="flex: 1;" class="design__hl">
                             <div class="circle"></div>
@@ -269,7 +272,7 @@
                     </div>
                 </article>
 
-                <article class="container__conclusion">
+                <article id="conclusion" class="container__conclusion">
                     <div class="content-conclusion">
                         <h2 style="padding: 0 0 5vh 0;">Conclusion</h2>
                         <p>Desde una perspectiva inicial, la inteligencia artificial es un tema complejo y
@@ -278,39 +281,53 @@
                             sistemas que pueden aprender y tomar decisiones de forma autónoma, buscando replicar
                             la forma en que los seres humanos piensan y resuelven problemas. </p>
                     </div>
-                    <div class="image-conclusion">
-                        <img src="assets/image/background-thre.svg" alt="">
-                    </div>
-                </article>
-            </div>
-            <div class="container__darkgray">
-                <article class="container__feedback">
-                    <div class="content-feedback">
-                        <h2 style="margin: 0 0 2vh 0; text-align: right;">Dejanos tu opinion</h2>
-                        <form action="">
-                            <div class="usuario">
-                                <label for="et_nombre">Nombre</label>
-                                <input type="email" id="et_email">
-
-                                <label for="et_email">Correo</label>
-                                <input type="email" id="et_email">
-                            </div>
-
-                            <div class="comentario">
-                                <label for="et_email">Comentario</label>
-                                <textarea id="et_feedback" cols="30" rows="10"></textarea>
-                            </div>
-                        </form>
-                    </div>
-
                     <div style="margin: 0 0 0 100px;" class="design__vl">
                         <div class="circle"></div>
                         <div class="vl"></div>
                     </div>
                 </article>
             </div>
-        </div>  
+            <div style="margin: 10vh 0 0 0;" class="container__darkgray">
+                <h2 style="margin: 0 15vw 5vh 15vw; text-align: left; line-height: 80px;">Dejanos tu opinion</h2>
+                <article class="container__feedback">
+                    <div class="content-feedback">
+                        <form action="">
+                            <div>
+                                <label style="display: block;" for="et_email">Correo</label>
+                                <input type="email" id="et_email">
+                            </div>
+                            <div>
+                                <label style="display: block;" for="et_nombre">Nombre</label>
+                                <input type="email" id="et_email">
+                            </div>
+                            
+                            <div style="flex: 1; margin: 30px 0 0 0; display: flex; flex-direction: column;">
+                                <label style="display: block;" for="et_email">Comentario</label>
+                                <textarea style="flex: 1; resize: none;" id="et_feedback"></textarea>
+                            </div>
+
+                            <button>Enviar</button>
+                        </form>
+                    </div>
+                    <img src="assets/image/background-thre.svg" alt="">
+                </article>
+            </div>
+        </div>
     </div>
 </body>
+
+<footer>
+    <div class="container__logo">
+        <img style="margin: 0 10px 0 0;" src="/assets/icons/logo.svg" alt="logo xmict">
+        <p>Created by XMICT</p>
+    </div>
+    <div class="container__redes">
+        <a target="_blank" href="https://github.com/XMICT"><img src="/assets/icons/github.svg" alt="github"></a>
+        <a target="_blank" href="www.linkedin.com/in/carlos-guardiola-996b3728b"><img src="/assets/icons/linkedin.svg" alt="linkedin"></a>
+        <a target="_blank" href="https://www.instagram.com/guardiola.prk/"><img src="/assets/icons/instagram.svg" alt="instagram"></a>
+        
+        
+    </div>
+</footer>
 
 </html>
