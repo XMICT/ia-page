@@ -509,3 +509,9 @@ footer p{
 .home-items a:hover{
     color: var(--blue);
 }
+
+.content-feedback button:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
